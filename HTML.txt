@@ -1,0 +1,14 @@
+<HTML>
+          <head>
+                 <title>Mi primera pagina web</title>
+          </head>
+          <style>
+                  h1{text-align:center;}
+                  h3{color:blue;}   
+          </style> 
+          <body>
+                <h1>hola mundo</h1>
+                <h3>Edu,Lupita,Alberto</h3>
+                <p>Mas vale intentarlo</p>
+          </body>
+</HTML       
