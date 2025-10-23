@@ -4,6 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../fontawesome-free-7.1.0-web/css/all.css">
+
+    <style>
+        table{
+             margin: auto;
+             margin-top: 50px;
+
+             text-align: center;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 16px;
+
+             border-collapse: collapse;
+        }
+        
+        table th,
+        table td{
+            border: 1px solid #dee2e6;
+            padding: 5px 10px;
+        }
+
+        table th,
+        table td:first-child{
+            background-color: #17a2b8;
+            color: #fff;
+            font-weight: 600;
+            width: 100px;
+        }
+
+        table td i{
+            margin-right: 15px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        table td i:nth-child(1){
+            color: #17a2b8;
+        }
+
+        table td i:nth-child(2){
+            color: #28a745;
+        }
+
+        table td i:nth-child(1){
+            color: #dc3545;
+            margin-right: 0px;
+        }
+
+        table td :nth-child(odd){
+          background-color: rgba(0,0,0,0.5);
+        }
+
+        table tr :hover{
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        table td i :hover{
+            opacity: 0.7;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <!--Tabla básica de HTML-->
@@ -12,33 +74,43 @@
         <th>Horario</th>
         <th>Materias</th>
         <th>Maestro</th>
+        <th>ID</th>
+
     
     </tr>
        <tr>
         <td>H1</td>
         <td>Desarrollo de la Comunicación Oral y Escrita</td>
         <td>Silvia Carrillo</td>
+        <td>15230</td>
     </tr>
         <tr>
             <td>H2</td>
             <td>Introducción al desarrollo de aplicaciones en internet</td>
-            <td>Ricardo Elizalde</td>
+            <td>Ricardo Elizalde</td>3+
+            <td>19830</td>
         </tr>
         <tr>
             <td>H3</td>
             <td>Algebra</td>
             <td>Javier Lara</td>
+            <td>77896</td>
         </tr>
         <tr>
             <td>H4</td>
             <td>Contabilidad</td>
             <td>Carla Salas</td>
+            <td>66305</td>
+            <td><i class="fa-solid fa-info"></i>
+        </td>                    
         </tr>
         <tr>
             <td>H5</td>
             <td>English</td>
             <td>Miguel Rios</td>
+            <td>65982</td>
         </tr>
+
         <!--Tabla Avanzada de HTML-->
         <table>
             <thead style="background: #58c3cf;"> 
@@ -46,6 +118,8 @@
                     <th>Horario</th>
                     <th>Actividad Extra</th>
                     <th>Comentario</th>
+                    <th>Correo</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody style="background: #ffffcc;">
@@ -53,6 +127,8 @@
                     <td>7:30-8:30</td>
                     <td>Ir a fútbol</td>
                     <td>Regreso a mi casa</td>
+
+                    
                 </tr>
             </tbody>
 
@@ -61,9 +137,26 @@
                     <th>3:30-7:00</th>
                     <th>Hago las tareas</th>
                     <th>Después me alisto</th>
+                    <td><i class="fa-solid fa-pen-to-square"></i></td>
                 </tr>
             </tfoot>
         </table>
-    </table>
+                    <tfoot style="background: #d3d3d3;">
+                <tr>
+                    <th></th>
+                    <th>Hago las tareas</th>
+                    <th>Después me alisto</th>
+                </tr>
+            </tfoot>
+
+            <tfoot style="background: #d3d3d3;">
+                <tr>
+                    <th></th>
+                    <th>Hago las tareas</th>
+                    <th>Después me alisto</th>
+                    <td><i class="fa-solid fa-circle-info"></i></td>
+                </tr>
+            </tfoot>
+</table>
 </body>
 </html>
